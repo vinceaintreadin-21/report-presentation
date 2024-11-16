@@ -24,7 +24,7 @@
     <SCript>
         function addTeacher(){
             const teachersDiv = document.getElementById('teachers');
-            const index = teachersDiv.children.length / 2; // Adjust index calculation
+            const index = teachersDiv.getElementsByTagName('input').length; // Adjust index calculation
             const newTeacher = document.createElement('div');
             newTeacher.innerHTML = `<input type="text" name="teachers[${index}][name]" placeholder="Teacher Name">`;
             teachersDiv.appendChild(newTeacher);
