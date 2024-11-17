@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+}
+#teachers{
+    border-style:none;
+}
+div{
+    border-style:solid;
+    text-align:center;
+    border-style:dashed;
+    background-color: gray;
+}
+form{
+    border-style:solid;
+    background-color: gray;
+    border-style: dashed;
+    text-align: center;
+}
+
+
+.head{
+    border-style:solid;
+    background-color: gray;
+    border-style: dashed;
+    text-align: center;
+}

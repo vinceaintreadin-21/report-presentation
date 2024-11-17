@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{
+            background-color: black;
+        }
+
+        .head{
+            border-style:solid;
+            text-align:center;
+            border-style:dashed;
+            background-color: gray;
+        }
+        form{
+            border-style:solid;
+            background-color: gray;
+            border-style: dashed;
+            text-align: center;
+        }
+
+    </style>
     <title>Document</title>
 </head>
 <body>
+    <div class="head">
     <h1>Create New</h1>
+    </div>
+    
 
     <form action="{{Route('store')}}" method="POST">
         @csrf
@@ -21,7 +43,8 @@
         <button type="button" onclick="addTeacher()">Add Another Teacher</button>
         <button type="submit">Create</button>
     </form>
-    <SCript>
+
+    <Script>
         function addTeacher(){
             const teachersDiv = document.getElementById('teachers');
             const index = teachersDiv.getElementsByTagName('input').length; // Adjust index calculation
@@ -29,6 +52,6 @@
             newTeacher.innerHTML = `<input type="text" name="teachers[${index}][name]" placeholder="Teacher Name">`;
             teachersDiv.appendChild(newTeacher);
         }
-    </SCript>
+    </Script>
 </body>
 </html>
