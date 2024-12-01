@@ -12,9 +12,7 @@ class Teacher extends Model
 
     protected $fillable = ['name'];
 
-    protected $guarded = [
-        'student_id'
-    ];
+    protected $guarded = ['student_id'];
 
     public function student():BelongsTo{
         return $this->belongsTo(Student::class);
